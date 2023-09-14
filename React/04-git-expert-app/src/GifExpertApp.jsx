@@ -1,11 +1,11 @@
 import { useState } from "react";
-import  {AddCategory}  from "./components/AddCategory";
-import { GifGrid } from "./components/GifGrid";
+import  {AddCategory, GifGrid}  from "./components"; // por defecto conge el index entonces no hace falta apautar a el
+
 
 export const GifExpertApp = () => {
 
 const [categories, setCategories] = useState(
-    ['one punch','Dragon Ball']
+    ['one punch']
 
 );
 const onAddCategory= (newCategory) =>{
