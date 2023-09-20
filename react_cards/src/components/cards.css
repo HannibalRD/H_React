@@ -1,0 +1,16 @@
+.card:hover{
+    box-shadow: 5px 10px 20px 2px rgba(255, 255, 255, 0.2) !important;
+    transition: all 0.7s linear;
+}
+
+.custom-card-0.animate__animated.animate__fadeInUp{
+    --animate-duration: 2s
+  }
+  
+  .custom-card-1.animate__animated.animate__fadeInUp{
+    --animate-duration: 2.4s
+  }
+
+  .custom-card-2.animate__animated.animate__fadeInUp{
+    --animate-duration: 2.8s
+  }

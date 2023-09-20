@@ -8,38 +8,49 @@ const cards = [
 {
     id:1,
     title:'Fazt Web',
-    image: image1
+    image: image1,
+    url: 'http://google.com'
+
 },
 {
     
     id:2,
     title:'Fazt Blog',
-    image: image2
+    image: image2,
+    url: 'http://google.com'
 },
 {
     
     id:3,
     title:'Fazt Web',
-    image: image3
+    image: image3,
+    url: 'http://google.com'
 }
 ]
 
 
 function Cards() {
-  return (
+    
+return (
     // bg-info es para ver el contorno que ocupa donde esta puesto i lo cambia de color
     <div className='container d-flex justify-content-center h-100 align-items-center'> 
         <div className='row'>
             {
-                cards.map(card =>(
+                cards.map((card,index) =>(
                     <div className='col-md-4' key={card.id}>
-                        <Card title={card.title} image={card.image}/>
+                        <Card 
+                        title={card.title} 
+                        image={card.image} 
+                        url={card.url} 
+                        text={card.text}
+                        customClassName={`custom-card-${index}`}
+                        />
                     </div>
                 ))
             }
         </div>
     </div>
-  )
+)
 }
 
 export default Cards
