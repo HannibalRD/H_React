@@ -1,3 +1,5 @@
+
+
 .App {
     background-color: rgb(238, 69, 64);
     height: 100vh;
@@ -10,6 +12,10 @@
         rgba(81,10,50,1) 45%,
         rgba(45,20,44,1) 100%
     );
+}
+
+.card{
+    margin-top: 5rem;
 }
 
 .card-body{
@@ -29,3 +35,6 @@
 .card-img-top:hover{
     transform: scale(1.8);
 } 
+.App.h1{
+    margin-top: 50px;
+}

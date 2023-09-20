@@ -33,7 +33,7 @@ function Cards() {
     
 return (
     // bg-info es para ver el contorno que ocupa donde esta puesto i lo cambia de color
-    <div className='container d-flex justify-content-center h-100 align-items-center'> 
+    <div className='container d-flex justify-content-center align-items-center'> 
         <div className='row'>
             {
                 cards.map((card,index) =>(
