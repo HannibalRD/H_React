@@ -2,8 +2,7 @@
 
 .App {
     background-color: rgb(238, 69, 64);
-    height: 100vh;
-
+    min-height: 100vh !important;
     background: linear-gradient(
         180deg,
         rgba(238,69,64,1) 0%,
@@ -37,4 +36,8 @@
 } 
 .App.h1{
     margin-top: 50px;
+}
+.custom-card{
+    width: 25vw !important;
+    margin: 20px;
 }

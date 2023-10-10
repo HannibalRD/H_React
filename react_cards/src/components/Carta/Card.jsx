@@ -1,17 +1,22 @@
-import React from 'react'
+import React,{useState} from 'react'
 import  PropTypes  from "prop-types";
 import './cards.css'
 function Card({title,image,url,text,customClassName}) {
+  const [isCollapsed, setIsCollapsed] = useState(true);
+
+  const toggleCollapse = () => {
+    setIsCollapsed(!isCollapsed);
+  };
   return (
     <div className={`card text-center bg-dark animate__animated animate__fadeInUp ${customClassName}`}>
-      <div className='overflow'>
+      <div className='overflow' onClick={toggleCollapse}>
         <img src={image} alt="null" className='card-img-top '/>
       </div>
-      <div className='card-body text-light'>
+      <div className={` card-body text-light ${isCollapsed ? '' : 'collapse'}`}>
           <h4 className='card-title'>{title}</h4>
           
             <p className='card-text text-secundary'>{
-            text ? text:  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum distinctio molestias hic tenetur non. Quo, voluptatibus. Dolor eveniet quibusdam, a quis iste saepe ducimus nesciunt fugiat ex, repudiandae rerum quo."
+            text ? text:  "."
             }</p>
             <a href={url} className='btn btn-outline-secondary' target="_blank" rel='noreferrer'>
               Go to this web side

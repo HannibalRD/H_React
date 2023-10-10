@@ -1,5 +1,5 @@
 import  React from "react";
-import './cards.css'
+import '../Carta/cards.css'
 const portada= 'HOLA';
 const dividido= portada.split('')
 
