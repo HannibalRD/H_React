@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body onload="hola()">
+    <h1>Ahorcado</h1>
+    <span id="a"></span>
+    <div id="resultado" class="p_hide">
+
+    </div>
+    <div id="fullImg">
+    <img src="1.png" alt="1" class="ocultarImagen" id="primeraImagen">
+    <img src="2.png" alt="2" class="ocultarImagen" id="primeraImagen1">
+    <img src="3.png" alt="3" class="ocultarImagen" id="primeraImagen2">
+    <img src="4.png" alt="4" class="ocultarImagen" id="primeraImagen3">
+    <img src="5.png" alt="5" class="ocultarImagen" id="primeraImagen4">
+    <img src="6.png" alt="" class="ocultarImagen" id="primeraImagen5">
+    <img src="7.png" alt="6" class="ocultarImagen" id="primeraImagen6">
+    <img src="8.png" alt="7" class="ocultarImagen" id="primeraImagen7">
+    <img src="9.png" alt="8" class="ocultarImagen" id="primeraImagen8">
+    <img src="10.png" alt="9" class="ocultarImagen" id="primeraImagen9">
+    </div>
+    <div id="letrasDichas">
+        <h2>Letras dichas</h2>
+        <p id="errores"></p>
+    </div>
+    <div id="botones"> 
+    <input type="text" id="letra" placeholder=" 10 Oportunidades" onkeypress="return Solo_Texto(event)" maxlength="1" minlength="1">
+    <button id="lletra" onclick="probarLetra()">Probar letra</button>
+    <input type="text" id="palabra" placeholder=" 1 Oportunidad" onkeypress="return Solo_Texto(event)">
+    <button id="paraula" onclick="probarPalabra()">Probar palabra</button>
+    <button onclick="mostrar()">Intentalo de nuevo</button>
+</div>
+
+</body>
+<script src="funciones.js"></script>
+</html>
